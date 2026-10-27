@@ -140,3 +140,9 @@ Do not overwrite local branches or edits just to make `git pull` succeed.
 
 Include model and quantization, OS, GPU/VRAM, RAM, driver, install route, exact command, expected result and actual
 error. Remove API keys and private data before sharing. Follow [CONTRIBUTING.md](../CONTRIBUTING.md).
+
+## Tool call bug reports
+
+<tool_call> <function=extraction> <parameter=excerpt> ... </parameter> </function> </tool_call>
+
+like this grammar, the agent will not know how to execute it, and will break.
